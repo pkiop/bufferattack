@@ -1,0 +1,3 @@
+movl %eax, %edx
+movl %eax, %ebx
+
